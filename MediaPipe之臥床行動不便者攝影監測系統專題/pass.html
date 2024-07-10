@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>查詢密碼</title>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      max-width: 400px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background-color: #f4f4f4;
+    }
+    .container h2 {
+      text-align: center;
+    }
+    .container input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    .container button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    .container button:hover {
+      background-color: #45a049;
+    }
+    
+    /* 響應式設計 */
+    @media (max-width: 600px) {
+      .container {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>忘記密碼</h2>
+    <form action="pass.php" method="POST">
+      <input type="email" name="email" placeholder="請輸入電子郵件地址" required>
+      <button type="submit">發送</button>
+    </form>
+  </div>
+</body>
+</html>

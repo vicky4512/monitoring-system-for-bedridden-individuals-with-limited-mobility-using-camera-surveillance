@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>註冊</title>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      max-width: 400px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background-color: #f4f4f4;
+    }
+    .container h2 {
+      text-align: center;
+    }
+    .container input[type="text"],
+    .container input[type="password"],
+    .container input[type="email"] { /* 加入電子郵件輸入框的樣式 */
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      box-sizing: border-box; /* 使用box-sizing來調整大小 */
+    }
+    .container button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    .container button:hover {
+      background-color: #45a049;
+    }
+    
+    /* 響應式設計 */
+    @media (max-width: 600px) {
+      .container {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>註冊</h2>
+    <form action="register.php" method="POST">
+      <input type="text" name="username" placeholder="使用者名稱" required>
+      <input type="password" name="password" placeholder="密碼" required>
+      <input type="email" name="email" placeholder="電子信箱" required>
+      <button type="submit">註冊</button>
+    </form>
+  </div>
+</body>
+</html>
